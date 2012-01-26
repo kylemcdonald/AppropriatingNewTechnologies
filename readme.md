@@ -12,12 +12,16 @@ What do you want your world to look like? This class will focus on creating the 
 Schedule:
 
 1. Introductions
-2. Overview
+2. Class overview
+3. Assignment preparation: GitHub, code archaeology, distributed creativity
 
-Challenges:
+Assignment:
 
-1. Register for the [openFrameworks forum](http://forum.openframeworks.cc/), click [unread posts](http://forum.openframeworks.cc/index.php?action=unread) and look around to see what people are working on.
-2. Register for [GitHub](https://github.com/) and fork this repository.
+1. Register for the [openFrameworks forum](http://forum.openframeworks.cc/), and look around to see what people are working on (try [unread posts](http://forum.openframeworks.cc/index.php?action=unread)).
+2. If you haven't already, download [openFrameworks](http://www.openframeworks.cc/).
+3. Register for [GitHub](https://github.com/). Fork [this repository](https://github.com/kylemcdonald/AppropriatingNewTechnologies) and clone your fork into`openFrameworks/apps/AppropriatingNewTechnologies/`. If you get stuck, GitHub has an excellent [Help](http://help.github.com/) section.
+4. Using [CamTwist](http://camtwiststudio.com/download/) and openFrameworks, recreate the idea behind [FaceFlip](http://vimeo.com/10191761) (i.e., capturing a live video stream and sending it back augmented). Zach posted [some code](http://forum.openframeworks.cc/index.php/topic,2946.0.html) to help get you started. You will need to port it to the most recent version of openFrameworks. You are encouraged to collaborate on this portion with other students, merging code from each others' forks.
+5. Augment the video in any way that you think is interesting. Record a video of you testing it on ChatRoulette or elsewhere, and post the video. For this part, you can work by yourself or in a group of exactly two people.
 
 ### Week 2: February 3
 
@@ -35,53 +39,17 @@ I will be away from class this week. Once it's closer, we can decide whether it 
 
 ## Links
 
-### Appropriated
+### 3d
 
-[US Army uses XBox 360 Controller to fly UAVs](http://www.pyrosoft.co.uk/blog/2007/11/04/army-fly-uav-spy-plane-with-xbox-360-controller/)
+[The Kinect Effect](http://www.xbox.com/en-US/Kinect/Kinect-Effect) is a rare case of a product being appropriated, and then re-appropriated by the creators. Also see [Microsoft Bets Big on Kinect for Windows](www.wired.com/epicenter/2012/01/microsoft-bets-kinect-windows/) and [Microsoft Unleashes The Kinect And Promptly Misses The Point](http://www.fastcodesign.com/1665827/microsoft-unleashes-the-kinect-and-promptly-misses-the-point).
 
-[The Kinect Effect](http://www.xbox.com/en-US/Kinect/Kinect-Effect) is a rare case of a product being appropriated, and then re-appropriated by the creators. Also see, as responses [Microsoft Bets Big on Kinect for Windows](www.wired.com/epicenter/2012/01/microsoft-bets-kinect-windows/) and [Microsoft Unleashes The Kinect And Promptly Misses The Point](http://www.fastcodesign.com/1665827/microsoft-unleashes-the-kinect-and-promptly-misses-the-point).
+### Computer Vision
 
-[Graffiti Markup Language](http://www.graffitimarkuplanguage.com) (GML) uses XML to describe information that would traditionally not have been described with XML.
+[EyeWriter](http://www.eyewriter.org/) uses eye tracking for a novel purposes: enabling graffiti artists. Eye tracking was originally developed to aid Air Force pilots.
 
-[EyeWriter](http://www.eyewriter.org/) uses eye tracking for a novel purposes: enabling graffiti artists. Eye tracking was originally developed for the air force.
+Chat Roulette is a unique platform for computer vision-based interactive media and performance. See [FaceFlip](http://vimeo.com/10191761) and [Mario Prank](https://www.youtube.com/watch?feature=player_embedded&v=OTC2I1lHnS4).
 
-[Video Toaster](https://www.youtube.com/watch?v=C_K8vnx2ZDc) was like the Kinect in that it brought a previously inaccessible technology to a lower price. The interesting thing is the marketing campaign surrounding it: they were genuinely interested in selling it on the idea of bringing down the large networks.
-
-[Warhol](https://www.youtube.com/watch?v=3oqUd8utr14) was a master of appropriation, all the way down to the Amiga.
-
-Chat Roulette is a unique platform for interactive media and performance. See [FaceFlip](http://vimeo.com/10191761) and [Mario Prank](https://www.youtube.com/watch?feature=player_embedded&v=OTC2I1lHnS4).
-
-### Waiting to be Appropriated
-
-[Biometric security, especially face detection](http://www.patentlyapple.com/patently-apple/2011/11/apple-wins-secret-patent-for-high-end-3d-object-recognition.html)
-
-["Avoid ghetto" Bing maps feature](http://news.cnet.com/8301-17852_3-57354445-71/the-joy-of-microsofts-avoid-ghetto-gps-patent/) What kind of routes might you suggest?
-
-[BusTime](http://bustime.mta.info/) from the MTA tells us where a bunch of buses are in NYC.
-
-[Firesheep](https://en.wikipedia.org/wiki/Firesheep) intercepts cookies to steal login data over wireless networks.
-
-### Hacking
-
-[Does Hacktivism Matter?](http://events.ccc.de/congress/2011/Fahrplan/events/4749.en.html)
-
-[Supervillainizer](http://www.anninaruest.com/a/supervillainizer/index.html) created networks of conspirators to distract intelligence organizations.
-
-The [Metrocard](http://events.ccc.de/congress/2005/fahrplan/events/765.en.html) has been reversed. ITP students have used this to create [MetroChange](http://metrochange.org/).
-
-[L Train Notwork](http://vimeo.com/32149926) provides an unexpected ad-hoc network.
-
-[Newsteek](http://newstweek.com/overview) spoofs an open wifi network and modifies information that goes through it.
-
-[OpenPaths](http://openpaths.cc/) was created in response to Apple saving GPS data on the iPhone and transferring it to iTunes without informing users.
-
-http://subsol.c3.hu/subsol_2/contributors0/warktext.html
-http://www.phrack.org/issues.html?issue=7&id=3&mode=txt
-
-[DDoS](https://en.wikipedia.org/wiki/Ddos#Distributed_attack) is a technique that makes it difficult to access a webpage. 
-state of hacking: DDOS and anonymous, WEP/WAP cracking, steganography, SQL injection. XSS
-http://www.critical-art.net/books/ecd/ecd2.pdf
-http://www.utsandiego.com/news/2010/apr/09/ucsd-prof-turns-meeting-protest-rally/
+[Face Substitution](http://vimeo.com/29348533) and [FaceOSC](http://vimeo.com/26098366) are appropriations of academic face tracking research. The researchers who work on these libraries will sometimes work with defense agencies on surveillance or security applications. [Biometric security](http://www.patentlyapple.com/patently-apple/2011/11/apple-wins-secret-patent-for-high-end-3d-object-recognition.html) is a large related field.
 
 ### Crowdsourcing
 
@@ -89,11 +57,58 @@ http://www.utsandiego.com/news/2010/apr/09/ucsd-prof-turns-meeting-protest-rally
 
 Amazon Mechanical Turk has been used to create some amazing work. See [Sol Lewitt + Mechanical Turk](http://clementvalla.com/category/work/sol-lewitt-mechanical-turk/) and [A Sequence of...](http://clementvalla.com/category/work/a-sequence-of/) from Clement Valla, as well as [Ten Thousand Cents](http://www.tenthousandcents.com/top.html) and other work from Aaron Koblin.
 
+### Glitch
+
+Glitch art is almost a purely appropriated field. There are [so many good texts](http://gli.tc/h/wiki/index.php/Glitch_theory) I won't list them here. We could spend a whole day just talking about [Jodi](https://en.wikipedia.org/wiki/Jodi#Selected_works) and software appropriation.
+
+### Hacking and Surveillance
+
+[Supervillainizer](http://www.anninaruest.com/a/supervillainizer/index.html) created networks of conspirators to distract intelligence organizations.
+
+The [Metrocard](http://events.ccc.de/congress/2005/fahrplan/events/765.en.html) has been reversed. ITP students have used this to create [MetroChange](http://metrochange.org/).
+
+[L Train Notwork](http://vimeo.com/32149926) provides an unexpected ad-hoc network.
+
+[Newsteek](http://newstweek.com/overview) spoofs an open wifi network and modifies information that goes through it. This is probably illegal.
+
+[OpenPaths](http://openpaths.cc/) was created in response to Apple saving GPS data on the iPhone and transferring it to iTunes without informing users.
+
+[DDoS](https://en.wikipedia.org/wiki/Ddos#Distributed_attack) is a technique that makes it difficult to access a webpage by overloading the server with requests. DDoS attacks are illegal. This type of attack has been used frequently by [Anonymous](http://mashable.com/2010/12/09/how-operation-payback-executes-its-attacks/) in the form of the [LOIC](https://en.wikipedia.org/wiki/LOIC), and by artists for "[virtual sit-ins](http://www.utsandiego.com/news/2010/apr/09/ucsd-prof-turns-meeting-protest-rally/)".
+
+With the right kinds of hardware and time, [WEP](http://lifehacker.com/5305094/how-to-crack-a-wi+fi-networks-wep-password-with-backtrack) and [WPA](http://www.aircrack-ng.org/doku.php?id=cracking_wpa) networks can be cracked. This is illegal.
+
+[Firesheep](https://en.wikipedia.org/wiki/Firesheep) intercepts cookies to steal login data over wireless networks. This is illegal.
+
+[Cross Site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) (XSS) can be used to inject content into a remote page using a malformed URL.
+
+[People Staring at Computers](http://vimeo.com/groups/openframeworks/videos/25958231) was a photographic study of computer-mediated interaction that turned into a collaboration with Apple and the Secret Service.
+
 ### Theory
+
+[Does Hacktivism Matter?](http://events.ccc.de/congress/2011/Fahrplan/events/4749.en.html)
 
 [What is in a name?](http://events.ccc.de/congress/2011/Fahrplan/events/4713.en.html) A historical overview, showing "a name never was ones own but always an intersection of administrative, media-technical and personal interventions".
 
-http://criticalengineering.org/
+[Critical Engineering Manifesto](http://criticalengineering.org/) is a short document describing how artists might approach technology critically. It comes from the same people who brought you [Newstweek](http://newstweek.com/overview).
 
-all bioart is appropriation of biology for art.
-especially cae http://www.critical-art.net/books/ecd/
+Some of the best artistic appropriation comes from the field of bioart, for which [Critical Art Ensemble](http://www.critical-art.net/) is best known. Particularly relevant is the first chapter of [Electronic Civil Disobedience](http://www.critical-art.net/books/ecd/ecd2.pdf).
+
+### Uncategorized
+
+#### Appropriated
+
+[Video Toaster](https://www.youtube.com/watch?v=C_K8vnx2ZDc) was like the Kinect in that it brought a previously inaccessible technology to a lower price. The interesting thing is the marketing campaign surrounding it: they were genuinely interested in selling it on the idea of bringing down the large networks.
+
+[US Army uses XBox 360 Controller to fly UAVs](http://www.pyrosoft.co.uk/blog/2007/11/04/army-fly-uav-spy-plane-with-xbox-360-controller/)
+
+[Graffiti Markup Language](http://www.graffitimarkuplanguage.com) (GML) uses XML to describe information that would traditionally not have been described with XML.
+
+[Warhol](https://www.youtube.com/watch?v=3oqUd8utr14) was a master of appropriation, all the way down to the Amiga.
+
+#### Waiting to be Appropriated
+
+["Avoid ghetto" Bing maps feature](http://news.cnet.com/8301-17852_3-57354445-71/the-joy-of-microsofts-avoid-ghetto-gps-patent/). What kind of routes might you suggest?
+
+[BusTime](http://bustime.mta.info/) from the MTA tells us where a bunch of buses are in NYC.
+
+[Siri](https://github.com/applidium/Cracking-Siri#readme) has been reverse engineered, which means you can use Siri on any device. You can also ask questions and get responses in an automated way.
