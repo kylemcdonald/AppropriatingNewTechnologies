@@ -20,7 +20,7 @@ Assignment:
 1. Register for the [openFrameworks forum](http://forum.openframeworks.cc/), and look around to see what people are working on (try [unread posts](http://forum.openframeworks.cc/index.php?action=unread)).
 2. If you haven't already, download [openFrameworks](http://www.openframeworks.cc/).
 3. Register for [GitHub](https://github.com/). Fork [this repository](https://github.com/kylemcdonald/AppropriatingNewTechnologies) and clone your fork into`openFrameworks/apps/AppropriatingNewTechnologies/`. If you get stuck, GitHub has an excellent [Help](http://help.github.com/) section.
-4. Using [CamTwist](http://camtwiststudio.com/download/) and openFrameworks, recreate the idea behind [FaceFlip](http://vimeo.com/10191761) (i.e., capturing a live video stream and sending it back augmented). Zach posted [some code](http://forum.openframeworks.cc/index.php/topic,2946.0.html) to help get you started. You will need to port it to the most recent version of openFrameworks. You are encouraged to collaborate on this portion with other students, merging code from each others' forks.
+4. Using [CamTwist](http://camtwiststudio.com/download/) and openFrameworks, recreate the idea behind [FaceFlip](http://vimeo.com/10191761) (i.e., capturing a live video stream and sending it back augmented). Zach posted [some code](http://forum.openframeworks.cc/index.php/topic,2946.0.html) to help get you started. You will need to port it to the most recent version of openFrameworks. You are encouraged to collaborate on this portion with other students, merging code from each others' forks. You are not, however, allowed to share files outside of GitHub. If you are using someone else's code, I need to see from the network graph.
 5. Augment the video in any way that you think is interesting. Record a video of you testing it on ChatRoulette or elsewhere, and post the video. For this part, you can work by yourself or in a group of exactly two people.
 
 ### Week 2: February 3
@@ -88,6 +88,8 @@ With the right kinds of hardware and time, [WEP](http://lifehacker.com/5305094/h
 [Cross Site Scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) (XSS) can be used to inject content into a remote page using a malformed URL.
 
 [People Staring at Computers](http://vimeo.com/groups/openframeworks/videos/25958231) was a photographic study of computer-mediated interaction that turned into a collaboration with Apple and the Secret Service.
+
+[9/11 Pager data](http://911.wikileaks.org/) was a huge release of all the pager messages throughout the day on 9/11.
 
 ### Theory
 
