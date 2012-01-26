@@ -9,6 +9,16 @@ What do you want your world to look like? This class will focus on creating the 
 
 ### Week 1: January 27
 
+Schedule:
+
+1. Introductions
+2. Overview
+
+Challenges:
+
+1. Register for the [openFrameworks forum](http://forum.openframeworks.cc/), click [unread posts](http://forum.openframeworks.cc/index.php?action=unread) and look around to see what people are working on.
+2. Register for [GitHub](https://github.com/) and fork this repository.
+
 ### Week 2: February 3
 
 ### Week 3: February 10
@@ -16,6 +26,8 @@ What do you want your world to look like? This class will focus on creating the 
 ### Week 4: February 17
 
 ### Week 5: February 24
+
+I will be away from class this week. Once it's closer, we can decide whether it makes more sense to reschedule or have someone else lead.
 
 ### Week 6: March 2
 
@@ -26,8 +38,6 @@ What do you want your world to look like? This class will focus on creating the 
 ### Appropriated
 
 [US Army uses XBox 360 Controller to fly UAVs](http://www.pyrosoft.co.uk/blog/2007/11/04/army-fly-uav-spy-plane-with-xbox-360-controller/)
-
-[What is in a name?](http://events.ccc.de/congress/2011/Fahrplan/events/4713.en.html) A historical overview, showing "a name never was ones own but always an intersection of administrative, media-technical and personal interventions".
 
 [The Kinect Effect](http://www.xbox.com/en-US/Kinect/Kinect-Effect) is a rare case of a product being appropriated, and then re-appropriated by the creators. Also see, as responses [Microsoft Bets Big on Kinect for Windows](www.wired.com/epicenter/2012/01/microsoft-bets-kinect-windows/) and [Microsoft Unleashes The Kinect And Promptly Misses The Point](http://www.fastcodesign.com/1665827/microsoft-unleashes-the-kinect-and-promptly-misses-the-point).
 
@@ -47,6 +57,10 @@ Chat Roulette is a unique platform for interactive media and performance. See [F
 
 ["Avoid ghetto" Bing maps feature](http://news.cnet.com/8301-17852_3-57354445-71/the-joy-of-microsofts-avoid-ghetto-gps-patent/) What kind of routes might you suggest?
 
+[BusTime](http://bustime.mta.info/) from the MTA tells us where a bunch of buses are in NYC.
+
+[Firesheep](https://en.wikipedia.org/wiki/Firesheep) intercepts cookies to steal login data over wireless networks.
+
 ### Hacking
 
 [Does Hacktivism Matter?](http://events.ccc.de/congress/2011/Fahrplan/events/4749.en.html)
@@ -55,35 +69,31 @@ Chat Roulette is a unique platform for interactive media and performance. See [F
 
 The [Metrocard](http://events.ccc.de/congress/2005/fahrplan/events/765.en.html) has been reversed. ITP students have used this to create [MetroChange](http://metrochange.org/).
 
+[L Train Notwork](http://vimeo.com/32149926) provides an unexpected ad-hoc network.
+
+[Newsteek](http://newstweek.com/overview) spoofs an open wifi network and modifies information that goes through it.
+
+[OpenPaths](http://openpaths.cc/) was created in response to Apple saving GPS data on the iPhone and transferring it to iTunes without informing users.
+
+http://subsol.c3.hu/subsol_2/contributors0/warktext.html
+http://www.phrack.org/issues.html?issue=7&id=3&mode=txt
+
+[DDoS](https://en.wikipedia.org/wiki/Ddos#Distributed_attack) is a technique that makes it difficult to access a webpage. 
+state of hacking: DDOS and anonymous, WEP/WAP cracking, steganography, SQL injection. XSS
+http://www.critical-art.net/books/ecd/ecd2.pdf
+http://www.utsandiego.com/news/2010/apr/09/ucsd-prof-turns-meeting-protest-rally/
+
 ### Crowdsourcing
 
 [Macro Dragnets](http://events.ccc.de/congress/2011/Fahrplan/events/4813.en.html) and [Asking the public to identify criminals](http://bits.blogs.nytimes.com/2011/08/09/london-police-use-flickr-to-identify-looters/).
 
-http://bustime.mta.info/
+Amazon Mechanical Turk has been used to create some amazing work. See [Sol Lewitt + Mechanical Turk](http://clementvalla.com/category/work/sol-lewitt-mechanical-turk/) and [A Sequence of...](http://clementvalla.com/category/work/a-sequence-of/) from Clement Valla, as well as [Ten Thousand Cents](http://www.tenthousandcents.com/top.html) and other work from Aaron Koblin.
 
-all bioart is appropriation of biology for art.
-especially cae http://www.critical-art.net/books/ecd/
+### Theory
 
-http://subsol.c3.hu/subsol_2/contributors0/warktext.html
-http://www.phrack.org/issues.html?issue=7&id=3&mode=txt
-state of hacking: DDOS and anonymous, WEP/WAP cracking, steganography, SQL injection. XSS
-
-newstweek, firesheep exploit
-
-getting feedback for every assignment + class instead of just at the end of the semeter.
-
-http://openpaths.cc/
+[What is in a name?](http://events.ccc.de/congress/2011/Fahrplan/events/4713.en.html) A historical overview, showing "a name never was ones own but always an intersection of administrative, media-technical and personal interventions".
 
 http://criticalengineering.org/
 
-notwork
-
-anything involving amazon mechanical turk
-
-assignments:
-- making something interesting with FaceOSC
-- analyze the critical engineering manifesto
-- analyze the kinect effect campaign
-- make something interesting with XSS
-- provide a service out of context, or an alternative service in context
-- misuse something creatively
+all bioart is appropriation of biology for art.
+especially cae http://www.critical-art.net/books/ecd/
