@@ -95,8 +95,6 @@ Some of the best artistic appropriation comes from the field of bioart, for whic
 
 ### Uncategorized
 
-#### Appropriated
-
 [Video Toaster](https://www.youtube.com/watch?v=C_K8vnx2ZDc) was like the Kinect in that it brought a previously inaccessible technology to a lower price. The interesting thing is the marketing campaign surrounding it: they were genuinely interested in selling it on the idea of bringing down the large networks.
 
 [US Army uses XBox 360 Controller to fly UAVs](http://www.pyrosoft.co.uk/blog/2007/11/04/army-fly-uav-spy-plane-with-xbox-360-controller/)
@@ -104,8 +102,6 @@ Some of the best artistic appropriation comes from the field of bioart, for whic
 [Graffiti Markup Language](http://www.graffitimarkuplanguage.com) (GML) uses XML to describe information that would traditionally not have been described with XML.
 
 [Warhol](https://www.youtube.com/watch?v=3oqUd8utr14) was a master of appropriation, all the way down to the Amiga.
-
-#### Waiting to be Appropriated
 
 ["Avoid ghetto" Bing maps feature](http://news.cnet.com/8301-17852_3-57354445-71/the-joy-of-microsofts-avoid-ghetto-gps-patent/). What kind of routes might you suggest?
 
