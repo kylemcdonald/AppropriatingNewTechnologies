@@ -24,8 +24,6 @@ Assignment:
 5. Augment the video in any way that you think is interesting. Record a video of you testing it on ChatRoulette or elsewhere, and post the video. For this part, you can work by yourself or in a group of exactly two people.
 6. After completing the assignment, post a link to your video on the wiki. And the chat logs will also go on the wiki.
 
-![Yo Dawg](http://g.static.memegenerator.net/cache/instances/500x/13/13389/13710965.jpg)
-
 ### Week 2: February 3
 
 ### Week 3: February 10
@@ -51,6 +49,8 @@ In order to pass the class, students must complete the assignments, the final pr
 ### 3d
 
 [The Kinect Effect](http://www.xbox.com/en-US/Kinect/Kinect-Effect) is a rare case of a product being appropriated, and then re-appropriated by the creators. Also see [Microsoft Bets Big on Kinect for Windows](www.wired.com/epicenter/2012/01/microsoft-bets-kinect-windows/) and [Microsoft Unleashes The Kinect And Promptly Misses The Point](http://www.fastcodesign.com/1665827/microsoft-unleashes-the-kinect-and-promptly-misses-the-point).
+
+![Yo Dawg](http://g.static.memegenerator.net/cache/instances/500x/13/13389/13710965.jpg)
 
 ### Computer Vision
 
