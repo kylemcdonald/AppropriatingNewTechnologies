@@ -24,6 +24,8 @@ Assignment:
 5. Augment the video in any way that you think is interesting. Record a video of you testing it on ChatRoulette or elsewhere, and post the video. For this part, you can work by yourself or in a group of exactly two people.
 6. After completing the assignment, post a link to your video on the wiki.
 
+#### Chat log coming soon.
+
 ### Week 2: February 3
 
 ### Week 3: February 10
