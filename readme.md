@@ -22,7 +22,7 @@ Assignment:
 3. Register for [GitHub](https://github.com/). Fork [this repository](https://github.com/kylemcdonald/AppropriatingNewTechnologies) and clone your fork into`openFrameworks/apps/AppropriatingNewTechnologies/`. If you get stuck, GitHub has an excellent [Help](http://help.github.com/) section.
 4. Using [CamTwist](http://camtwiststudio.com/download/) and openFrameworks, recreate the idea behind [FaceFlip](http://vimeo.com/10191761) (i.e., capturing a live video stream and sending it back augmented). Zach posted [some code](http://forum.openframeworks.cc/index.php/topic,2946.0.html) to help get you started. You will need to port it to the most recent version of openFrameworks. You are encouraged to collaborate on this portion with other students, merging code from each others' forks. You are not, however, allowed to share files outside of GitHub. If you are using someone else's code, I need to see from the network graph.
 5. Augment the video in any way that you think is interesting. Record a video of you testing it on ChatRoulette or elsewhere, and post the video. For this part, you can work by yourself or in a group of exactly two people.
-6. After completing the assignment, post a link to your video on the wiki.
+6. After completing the assignment, post a link to your video on the wiki. And the chat logs will also go on the wiki.
 
 #### Chat log coming soon.
 
