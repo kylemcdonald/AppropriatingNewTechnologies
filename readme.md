@@ -26,6 +26,8 @@ Assignment:
 
 #### Chat log coming soon.
 
+![Yo Dawg](http://g.static.memegenerator.net/cache/instances/500x/13/13389/13710965.jpg)
+
 ### Week 2: February 3
 
 ### Week 3: February 10
