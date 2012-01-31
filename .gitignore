@@ -5,6 +5,7 @@
 *.app*
 *.DS_*
 *.xcworkspacedata
+xcuserdata/
 
 .svn/
 obj/
