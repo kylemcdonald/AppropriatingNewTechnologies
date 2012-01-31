@@ -7,9 +7,12 @@ extern "C" {
 //--------------------------------------------------------------
 void testApp::setup(){
 
+	finder.setup("haarcascade_frontalface_default.xml");
 	//CGContextRef cgctx = NULL;
 	//ofSetVerticalSync(true);
-	tex.allocate(300,300, GL_RGBA);
+	//tex.allocate(300,300, GL_RGBA);
+	image.allocate(300, 300, OF_IMAGE_COLOR);
+	//pixels.allocate(300, 300, OF_IMAGE_COLOR);
 	
 	ofSetFrameRate(30);
 
@@ -26,22 +29,43 @@ void testApp::update(){
 	// now, let's get the R and B data swapped, so that it's all OK:
 	for (int i = 0; i < w*h; i++){
 		
-		unsigned char r = data[i*4];
-		data[i*4] = data[i*4+2];
-		data[i*4+2] = r;
+		unsigned char r = data[i*4]; // mem A  
+		
+		data[i*4]   = data[i*4+1];   
+		data[i*4+1] = data[i*4+2];   
+		data[i*4+2] = data[i*4+3];   
+		data[i*4+3] = r; 
 	}
 	
 	
-	if (data!= NULL) tex.loadData(data, 300, 300, GL_RGBA);
+	if (data!= NULL) {
+		//tex.loadData(data, 300, 300, GL_RGBA);
+		//tex.readToPixels(pixels);
+		//image = pixels;
+		image.setFromPixels(data, 300, 300, OF_IMAGE_COLOR_ALPHA, true);
+		image.setImageType(OF_IMAGE_COLOR);
+		image.update();
+		finder.findHaarObjects(image.getPixelsRef());
+		
+	}
 	//cout << imageBelowWindow()[0] << endl;
+	
 	
 
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	tex.draw(0,0, ofGetWidth(), ofGetHeight());
-
+	image.draw(0,0, ofGetWidth(), ofGetHeight());
+	
+	ofNoFill();
+	
+	//for each face "blob" we found, draw a rectangle around the face
+    //#2
+	for(int i = 0; i < finder.blobs.size(); i++) {
+		ofRect(finder.blobs[i].boundingRect);
+	}
+	
 }
 
 //--------------------------------------------------------------
