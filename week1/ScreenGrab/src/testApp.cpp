@@ -17,7 +17,6 @@ void testApp::setup(){
 
 //--------------------------------------------------------------
 void testApp::update(){
-<<<<<<< HEAD
 	
 	int w = 300;
 	int h = 300;
@@ -37,18 +36,12 @@ void testApp::update(){
 	//cout << imageBelowWindow()[0] << endl;
 	
 
-=======
->>>>>>> eb5afba7833acdcd04a752d40f0d8f7c320bf2fc
-
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
-<<<<<<< HEAD
 	tex.draw(0,0, ofGetWidth(), ofGetHeight());
-=======
 
->>>>>>> eb5afba7833acdcd04a752d40f0d8f7c320bf2fc
 }
 
 //--------------------------------------------------------------
