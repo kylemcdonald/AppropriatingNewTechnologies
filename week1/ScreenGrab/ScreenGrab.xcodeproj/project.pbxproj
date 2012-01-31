@@ -108,6 +108,260 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C1AE5C814D792F2006FCA56 /* ofxOpenCv */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5C914D792F2006FCA56 /* install.xml */,
+				5C1AE5CA14D792F2006FCA56 /* libs */,
+				5C1AE62014D792F2006FCA56 /* src */,
+			);
+			name = ofxOpenCv;
+			path = ../../../addons/ofxOpenCv;
+			sourceTree = SOURCE_ROOT;
+		};
+		5C1AE5CA14D792F2006FCA56 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5CB14D792F2006FCA56 /* opencv */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		5C1AE5CB14D792F2006FCA56 /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5CC14D792F2006FCA56 /* include */,
+				5C1AE61D14D792F2006FCA56 /* lib */,
+			);
+			path = opencv;
+			sourceTree = "<group>";
+		};
+		5C1AE5CC14D792F2006FCA56 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5CD14D792F2006FCA56 /* opencv */,
+				5C1AE5D914D792F2006FCA56 /* opencv2 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5C1AE5CD14D792F2006FCA56 /* opencv */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5CE14D792F2006FCA56 /* cv.h */,
+				5C1AE5CF14D792F2006FCA56 /* cv.hpp */,
+				5C1AE5D014D792F2006FCA56 /* cvaux.h */,
+				5C1AE5D114D792F2006FCA56 /* cvaux.hpp */,
+				5C1AE5D214D792F2006FCA56 /* cvwimage.h */,
+				5C1AE5D314D792F2006FCA56 /* cxcore.h */,
+				5C1AE5D414D792F2006FCA56 /* cxcore.hpp */,
+				5C1AE5D514D792F2006FCA56 /* cxeigen.hpp */,
+				5C1AE5D614D792F2006FCA56 /* cxmisc.h */,
+				5C1AE5D714D792F2006FCA56 /* highgui.h */,
+				5C1AE5D814D792F2006FCA56 /* ml.h */,
+			);
+			path = opencv;
+			sourceTree = "<group>";
+		};
+		5C1AE5D914D792F2006FCA56 /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5DA14D792F2006FCA56 /* calib3d */,
+				5C1AE5DC14D792F2006FCA56 /* contrib */,
+				5C1AE5DE14D792F2006FCA56 /* core */,
+				5C1AE5E814D792F2006FCA56 /* features2d */,
+				5C1AE5EA14D792F2006FCA56 /* flann */,
+				5C1AE60414D792F2006FCA56 /* gpu */,
+				5C1AE60914D792F2006FCA56 /* highgui */,
+				5C1AE60C14D792F2006FCA56 /* imgproc */,
+				5C1AE61014D792F2006FCA56 /* legacy */,
+				5C1AE61514D792F2006FCA56 /* ml */,
+				5C1AE61714D792F2006FCA56 /* objdetect */,
+				5C1AE61914D792F2006FCA56 /* opencv.hpp */,
+				5C1AE61A14D792F2006FCA56 /* video */,
+			);
+			path = opencv2;
+			sourceTree = "<group>";
+		};
+		5C1AE5DA14D792F2006FCA56 /* calib3d */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5DB14D792F2006FCA56 /* calib3d.hpp */,
+			);
+			path = calib3d;
+			sourceTree = "<group>";
+		};
+		5C1AE5DC14D792F2006FCA56 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5DD14D792F2006FCA56 /* contrib.hpp */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		5C1AE5DE14D792F2006FCA56 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5DF14D792F2006FCA56 /* core.hpp */,
+				5C1AE5E014D792F2006FCA56 /* core_c.h */,
+				5C1AE5E114D792F2006FCA56 /* eigen.hpp */,
+				5C1AE5E214D792F2006FCA56 /* internal.hpp */,
+				5C1AE5E314D792F2006FCA56 /* mat.hpp */,
+				5C1AE5E414D792F2006FCA56 /* operations.hpp */,
+				5C1AE5E514D792F2006FCA56 /* types_c.h */,
+				5C1AE5E614D792F2006FCA56 /* version.hpp */,
+				5C1AE5E714D792F2006FCA56 /* wimage.hpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		5C1AE5E814D792F2006FCA56 /* features2d */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5E914D792F2006FCA56 /* features2d.hpp */,
+			);
+			path = features2d;
+			sourceTree = "<group>";
+		};
+		5C1AE5EA14D792F2006FCA56 /* flann */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE5EB14D792F2006FCA56 /* all_indices.h */,
+				5C1AE5EC14D792F2006FCA56 /* allocator.h */,
+				5C1AE5ED14D792F2006FCA56 /* autotuned_index.h */,
+				5C1AE5EE14D792F2006FCA56 /* composite_index.h */,
+				5C1AE5EF14D792F2006FCA56 /* dist.h */,
+				5C1AE5F014D792F2006FCA56 /* flann.hpp */,
+				5C1AE5F114D792F2006FCA56 /* flann_base.hpp */,
+				5C1AE5F214D792F2006FCA56 /* general.h */,
+				5C1AE5F314D792F2006FCA56 /* ground_truth.h */,
+				5C1AE5F414D792F2006FCA56 /* hdf5.h */,
+				5C1AE5F514D792F2006FCA56 /* heap.h */,
+				5C1AE5F614D792F2006FCA56 /* index_testing.h */,
+				5C1AE5F714D792F2006FCA56 /* kdtree_index.h */,
+				5C1AE5F814D792F2006FCA56 /* kmeans_index.h */,
+				5C1AE5F914D792F2006FCA56 /* linear_index.h */,
+				5C1AE5FA14D792F2006FCA56 /* logger.h */,
+				5C1AE5FB14D792F2006FCA56 /* matrix.h */,
+				5C1AE5FC14D792F2006FCA56 /* nn_index.h */,
+				5C1AE5FD14D792F2006FCA56 /* object_factory.h */,
+				5C1AE5FE14D792F2006FCA56 /* random.h */,
+				5C1AE5FF14D792F2006FCA56 /* result_set.h */,
+				5C1AE60014D792F2006FCA56 /* sampling.h */,
+				5C1AE60114D792F2006FCA56 /* saving.h */,
+				5C1AE60214D792F2006FCA56 /* simplex_downhill.h */,
+				5C1AE60314D792F2006FCA56 /* timer.h */,
+			);
+			path = flann;
+			sourceTree = "<group>";
+		};
+		5C1AE60414D792F2006FCA56 /* gpu */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE60514D792F2006FCA56 /* devmem2d.hpp */,
+				5C1AE60614D792F2006FCA56 /* gpu.hpp */,
+				5C1AE60714D792F2006FCA56 /* matrix_operations.hpp */,
+				5C1AE60814D792F2006FCA56 /* stream_accessor.hpp */,
+			);
+			path = gpu;
+			sourceTree = "<group>";
+		};
+		5C1AE60914D792F2006FCA56 /* highgui */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE60A14D792F2006FCA56 /* highgui.hpp */,
+				5C1AE60B14D792F2006FCA56 /* highgui_c.h */,
+			);
+			path = highgui;
+			sourceTree = "<group>";
+		};
+		5C1AE60C14D792F2006FCA56 /* imgproc */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE60D14D792F2006FCA56 /* imgproc.hpp */,
+				5C1AE60E14D792F2006FCA56 /* imgproc_c.h */,
+				5C1AE60F14D792F2006FCA56 /* types_c.h */,
+			);
+			path = imgproc;
+			sourceTree = "<group>";
+		};
+		5C1AE61014D792F2006FCA56 /* legacy */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE61114D792F2006FCA56 /* blobtrack.hpp */,
+				5C1AE61214D792F2006FCA56 /* compat.hpp */,
+				5C1AE61314D792F2006FCA56 /* legacy.hpp */,
+				5C1AE61414D792F2006FCA56 /* streams.hpp */,
+			);
+			path = legacy;
+			sourceTree = "<group>";
+		};
+		5C1AE61514D792F2006FCA56 /* ml */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE61614D792F2006FCA56 /* ml.hpp */,
+			);
+			path = ml;
+			sourceTree = "<group>";
+		};
+		5C1AE61714D792F2006FCA56 /* objdetect */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE61814D792F2006FCA56 /* objdetect.hpp */,
+			);
+			path = objdetect;
+			sourceTree = "<group>";
+		};
+		5C1AE61A14D792F2006FCA56 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE61B14D792F2006FCA56 /* background_segm.hpp */,
+				5C1AE61C14D792F2006FCA56 /* tracking.hpp */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		5C1AE61D14D792F2006FCA56 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE61E14D792F2006FCA56 /* osx */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		5C1AE61E14D792F2006FCA56 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE61F14D792F2006FCA56 /* opencv.a */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		5C1AE62014D792F2006FCA56 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5C1AE62114D792F2006FCA56 /* ofxCvBlob.h */,
+				5C1AE62214D792F2006FCA56 /* ofxCvColorImage.cpp */,
+				5C1AE62314D792F2006FCA56 /* ofxCvColorImage.h */,
+				5C1AE62414D792F2006FCA56 /* ofxCvConstants.h */,
+				5C1AE62514D792F2006FCA56 /* ofxCvContourFinder.cpp */,
+				5C1AE62614D792F2006FCA56 /* ofxCvContourFinder.h */,
+				5C1AE62714D792F2006FCA56 /* ofxCvFloatImage.cpp */,
+				5C1AE62814D792F2006FCA56 /* ofxCvFloatImage.h */,
+				5C1AE62914D792F2006FCA56 /* ofxCvGrayscaleImage.cpp */,
+				5C1AE62A14D792F2006FCA56 /* ofxCvGrayscaleImage.h */,
+				5C1AE62B14D792F2006FCA56 /* ofxCvHaarFinder.cpp */,
+				5C1AE62C14D792F2006FCA56 /* ofxCvHaarFinder.h */,
+				5C1AE62D14D792F2006FCA56 /* ofxCvImage.cpp */,
+				5C1AE62E14D792F2006FCA56 /* ofxCvImage.h */,
+				5C1AE62F14D792F2006FCA56 /* ofxCvMain.h */,
+				5C1AE63014D792F2006FCA56 /* ofxCvShortImage.cpp */,
+				5C1AE63114D792F2006FCA56 /* ofxCvShortImage.h */,
+				5C1AE63214D792F2006FCA56 /* ofxOpenCv.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
