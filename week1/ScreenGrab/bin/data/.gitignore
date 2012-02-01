@@ -1,0 +1,5 @@
+# you should find the file haarcascade_frontalface_default.xml
+# which is in the opencv haar example distributed with OF
+# and drag it into this folder. otherwise you'll get an error.
+
+*
