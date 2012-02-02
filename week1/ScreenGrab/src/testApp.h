@@ -20,6 +20,9 @@ class testApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+        int captureWidth;
+        int captureHeight;
+    
 		//ofTexture	tex;
 		//ofPixels	pixels;
 		ofImage		image;
