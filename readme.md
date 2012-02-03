@@ -53,7 +53,9 @@ When you start talking about properties of the face itself, you will also hear:
 
 > Despite the fact that other methods of identification (such as fingerprints, or iris scans) can be more accurate, face recognition has always remains a major focus of research because of its non-invasive nature and because it is people's primary method of person identification. ([Tanzeem Choudhury](http://vismod.media.mit.edu/tech-reports/TR-516/node7.html))
 
-As early as the 1960s, computers were aiding humans with face identification. In 1988/89 researchers developed techniques for automatically recognizing faces if the face was already aligned and normalized. They used techniques like principal components analysis, and neural networks for classification. In 1991 this technique was extended to face detection.
+As early as the 1960s, computers were aiding humans with face identification. [Woodrow Bledsoe](https://www.utexas.edu/faculty/council/1998-1999/memorials/Bledsoe/bledsoe.html) was one of the original researchers. In 1959 he worked on letter recognition using photocell mosaics at Sandia Corporation. In 1964/65 he worked with Helen Chan and Charles Bisson on the first face recognition algorithms at Panoramic Research, Inc. The algorithms were based on matching image that were manually marked up, so it worked but didn't scale well. Not very much of this work was published, "because the funding was provided by an unnamed intelligence agency that did not allow much publicity".
+
+In 1988/89 researchers developed techniques for automatically recognizing faces if the face was already aligned and normalized. They used techniques like principal components analysis, and neural networks for classification. In 1991 this technique was extended to face detection.
 
 One of the first databases to offer a baseline for comparing different algorithms was called [The Facial Recognition Technology (FERET) Database](http://www.itl.nist.gov/iad/humanid/feret/feret_master.html). It was developed from 1993-1997 and is still in use today. 
 
@@ -77,11 +79,13 @@ The city of Tampa, where the 2001 Super Bowl was held, [spent $8 million in fede
 
 > If it has a high success rate, then maybe it is an effective tool. (Bruce Howie, chair of the legal panel for the Pinellas chapter of the American Civil Liberties Union)
 
+Since 2006, using the right kind of data, some algorithms have been able to [uniquely identify identical twins](http://forensicpsych.umwblogs.org/research/criminal-justice/face-recognition-software/).
+
 Today, the combination of face detection with publicly available social network information can [correctly predict your Facebook profile and the first five digits of your SSN](http://www.heinz.cmu.edu/~acquisti/face-recognition-study-FAQ/#Q1.4) for a third of the public, in under three seconds:
 
 > Our study is less about face recognition and more about privacy concerns raised by the convergence of various technologies. There is no obvious answer and solution to the privacy concerns raised by widely available face recognition and identified (or identifiable) facial images. Google's Eric Schmidt observed that, in the future, young individuals may be entitled to change their names to disown youthful improprieties. It is much harder, however, to change someone's face.
 
-Reading more of [their research](https://www.blackhat.com/docs/webcast/acquisti-face-BH-Webinar-2012-out.pdf) there's a catch-22 they point out: the reason they can do this kind of matching is because there's a ton of data online, but in the future it will take more time to match people because there will be too much data to process. Also, notice that the research is partially funded by the U.S. Army Research Office. 
+Reading [more of this research](https://www.blackhat.com/docs/webcast/acquisti-face-BH-Webinar-2012-out.pdf) there's a Catch-22: the reason they can do this kind of matching is because there's a ton of data online, but in the future it will take more time to match people because there will be too much data online.As an aside: notice that this research is partially funded by the U.S. Army Research Office. 
 
 #### Examples
 
