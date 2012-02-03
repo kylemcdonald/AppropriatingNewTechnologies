@@ -34,11 +34,11 @@ This week we're going to talk about faces.
 2. Haar object detection and OpenCV
 3. Active appearance models: [FaceTracker](http://web.mac.com/jsaragih/FaceTracker/FaceTracker.html), [aamlib](https://code.google.com/p/aamlib-opencv/) and [Stasm](http://www.milbo.users.sonic.net/stasm/index.html)
 
-#### Summary
+#### Introduction
 
-One of the most salient objects in our day-to-day life is the human face. Faces are so important that the impairment of our face-processing ability is seen as a disorder, called [prosopagnosia](https://en.wikipedia.org/wiki/Prosopagnosia) while unconsciously seeing faces where there are none is an almost universal kind of [pareidolia](https://en.wikipedia.org/wiki/Pareidolia). Without any effort, we maintain a massively multidimensional model that can recognize minor variations in shape and color. One theory says that [color vision evolved in apes to help us empathize](http://www.sciencedaily.com/releases/2006/03/060320221839.htm) when we look at each others' faces. Structurally, [Chernoff faces](https://en.wikipedia.org/wiki/Chernoff_faces) use [18 dimensions](http://eagereyes.org/criticism/chernoff-faces) while FACS uses [46 dimensions](https://en.wikipedia.org/wiki/Facial_Action_Coding_System).
+One of the most salient objects in our day-to-day life is the human face. Faces are so important that the impairment of our face-processing ability is seen as a disorder, called [prosopagnosia](https://en.wikipedia.org/wiki/Prosopagnosia) while unconsciously seeing faces where there are none is an almost universal kind of [pareidolia](https://en.wikipedia.org/wiki/Pareidolia). Without any effort, we maintain a massively multidimensional model that can recognize minor variations in shape and color. One theory says that [color vision evolved in apes to help us empathize](http://www.sciencedaily.com/releases/2006/03/060320221839.htm). Structurally, [Chernoff faces](https://en.wikipedia.org/wiki/Chernoff_faces) use [18 dimensions](http://eagereyes.org/criticism/chernoff-faces) while FACS uses [46 dimensions](https://en.wikipedia.org/wiki/Facial_Action_Coding_System).
 
-When talking about computers vision and faces, three words come into play: detection, recognition, and tracking. Each of these has a specific meaning:
+When talking about computers vision and faces, there are three major modifiers on the word "face": detection, recognition, and tracking. Each of these has a specific meaning, though they are sometimes used loosely:
 
 1. _Detection_ is a binary classification task. That means it's only about deciding whether something is a face or not. _Detection_ means knowing the difference between a face and a non-face.
 2. _Recognition_ is about association, or naming. _Recognition_ means knowing the difference between my face and your face.
@@ -48,6 +48,20 @@ When you start talking about properties of the face itself, you will also hear:
 
 1. _Pose_ describes the position and orientation of the face.
 2. _Expression_ describes the gesture the face is making.
+
+#### History
+
+> Despite the fact that other methods of identification (such as fingerprints, or iris scans) can be more accurate, face recognition has always remains a major focus of research because of its non-invasive nature and because it is people's primary method of person identification. [Tanzeem Choudhury](http://vismod.media.mit.edu/tech-reports/TR-516/node7.html)
+
+As early as the 1960s, computers were aiding humans with face identification. In 1988/89 researchers developed techniques for automatically recognizing faces if the face was already aligned and normalized. They used techniques like principal components analysis, and neural networks for classification. In 1991 this technique was extended to face detection.
+
+> The technology first captured the public’s attention from the media reaction to a trial implementation at the January 2001 Super Bowl, which captured surveillance images and compared them to a database of digital mugshots. [US Government Subcommittee on Biometrics](www.biometrics.gov/Documents/facerec.pdf)
+
+One of the first databases to offer a baseline for comparing different algorithms was called [The Facial Recognition Technology (FERET) Database](http://www.itl.nist.gov/iad/humanid/feret/feret_master.html). It was developed from 1993-1997 and is still in use today. 
+
+> The goal of the FERET program was to develop automatic face recognition capabilities that could be employed to assist security, intelligence, and law enforcement personnel in the performance of their duties. ... Total funding for the program was in excess of $6.5 million. [NIST](http://www.nist.gov/itl/iad/ig/feret.cfm)
+
+#### Examples
 
 Daito's work: [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic)
 
