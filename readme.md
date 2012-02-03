@@ -31,12 +31,12 @@ This week we're going to talk about faces.
 #### Agenda
 
 1. History of faces and computer vision
-2. Haar object detection and OpenCV
-3. Active appearance models: [FaceTracker](http://web.mac.com/jsaragih/FaceTracker/FaceTracker.html), [aamlib](https://code.google.com/p/aamlib-opencv/) and [Stasm](http://www.milbo.users.sonic.net/stasm/index.html)
+2. Topics: Science of the Face, Normalization, Smiling
+3. Techniques: Haar detection and OpenCV, active appearance models and[FaceTracker](http://web.mac.com/jsaragih/FaceTracker/FaceTracker.html), [aamlib](https://code.google.com/p/aamlib-opencv/) and [Stasm](http://www.milbo.users.sonic.net/stasm/index.html)
 
 #### Introduction
 
-One of the most salient objects in our day-to-day life is the human face. Faces are so important that the impairment of our face-processing ability is seen as a disorder, called [prosopagnosia](https://en.wikipedia.org/wiki/Prosopagnosia) while unconsciously seeing faces where there are none is an almost universal kind of [pareidolia](https://en.wikipedia.org/wiki/Pareidolia). Without any effort, we maintain a massively multidimensional model that can recognize minor variations in shape and color. One theory says that [color vision evolved in apes to help us empathize](http://www.sciencedaily.com/releases/2006/03/060320221839.htm). Structurally, [Chernoff faces](https://en.wikipedia.org/wiki/Chernoff_faces) use [18 dimensions](http://eagereyes.org/criticism/chernoff-faces) while FACS uses [46 dimensions](https://en.wikipedia.org/wiki/Facial_Action_Coding_System).
+One of the most salient objects in our day-to-day life is the human face. Faces are so important that the impairment of our face-processing ability is seen as a disorder, called [prosopagnosia](https://en.wikipedia.org/wiki/Prosopagnosia) while unconsciously seeing faces where there are none is an almost universal kind of [pareidolia](https://en.wikipedia.org/wiki/Pareidolia). Without any effort, we maintain a massively multidimensional model that can recognize minor variations in shape and color. One theory says that [color vision evolved in apes to help us empathize](http://www.sciencedaily.com/releases/2006/03/060320221839.htm). Structurally, [Chernoff faces](https://en.wikipedia.org/wiki/Chernoff_faces) use [18 dimensions](http://eagereyes.org/criticism/chernoff-faces) while the Facial Action Coding System (FACS) uses [46 dimensions](https://en.wikipedia.org/wiki/Facial_Action_Coding_System).
 
 When talking about computers vision and faces, there are three major modifiers on the word "face": detection, recognition, and tracking. Each of these has a specific meaning, though they are sometimes used loosely:
 
@@ -89,21 +89,19 @@ Reading [more of this research](https://www.blackhat.com/docs/webcast/acquisti-f
 
 #### Science of the Face
 
-[Recognizing Action Units for Facial Expression Analysis](http://www-ee.ccny.cuny.edu/www/web/yltian/Publications/YLBook.pdf) uses feature matching, neural networks, and other techniques to detect interesting features and gestures.
+In the early 1960s, Paul Ekman set out to discover whether facial expressions for communicating emotions are universal or cultural. He travelled the world with photographs of distinct faces, even traveling to remote locations, and found that they were interpreted consistently.
 
-better FACS link, story about making faces at each other all day
+In the late 1960s, he continued his research with Wallace Friesen, and they spent a huge amount of time making faces at each other, unpacking the different muscles and labeling their combinations. This system is called the Facial Action Coding System (FACS). They discovered an interesting side effect:
 
-[microexpressions](https://en.wikipedia.org/wiki/Microexpression) and [truth wizards](https://en.wikipedia.org/wiki/Wizards_Project)
+> "What we discovered is that that expression alone is sufficient to create marked changes in the autonomic nervous system. When this first occurred, we were stunned. We weren't expecting this at all. And it happened to both of us. We felt terrible . What we were generating was sadness, anguish. And when I lower my brows, which is four, and raise the upper eyelid, which is five, and narrow the eyelids, which is seven, and press the lips together, which is twenty-four, I' m generating anger. My heartbeat will go up ten to twelve beats. My hands will get hot. As I do it, I can't disconnect from the system. It's very unpleasant, very unpleasant." (Paul Ekman in[The Naked Face](http://www.gladwell.com/2002/2002_08_05_a_face.htm))
 
-[Change blindness to gradual face changes](http://srsc.ulb.ac.be/axcwww/papers/pdf/06-PB.pdf)
+Some of the expressions described by FACS occur for very short bursts of time like 1/15th or 1/25th of a second. These are called[microexpressions](https://en.wikipedia.org/wiki/Microexpression). There are apocryphal stories, and some scientific studies, about "[truth wizards](https://en.wikipedia.org/wiki/Wizards_Project)"; a 1 in 1000 trait that allows people to identify these microexpressions and make insightful judgements about whether someone is lying.
 
-[machine pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/)
+Ken Perlin has a [great example](http://mrl.nyu.edu/~perlin/facedemo/) of a randomized FACS system. I've done some experiments with [randomized, unshaded FACS systems](http://www.openprocessing.org/visuals/?visualID=2062) and using [FFT bins to determine the action unit weights](http://www.openprocessing.org/visuals/?visualID=2067).
 
-even in people with prosopagnosia, skin conductance changes when they see someone familiar
+If an expression changes very slowly, we have difficulty keeping track of the change. This is called [change blindness to gradual face changes](http://srsc.ulb.ac.be/axcwww/papers/pdf/06-PB.pdf).
 
-[Perlin](http://mrl.nyu.edu/~perlin/facedemo/)
-
-Daito's work: [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic) vs [synesthetic and normal pain empathy](http://www.livescience.com/1628-study-people-literally-feel-pain.html).
+Daito Manabe is obsessed with the idea of expression transfer, and has spent a lot of time sensing and actuating expressions. He is best know for his work [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic). Consider expression transfer in the context of our natural [empathic response to pain](http://www.livescience.com/1628-study-people-literally-feel-pain.html).
 
 #### Averaging, Normalization, and Comparison of Faces
 
@@ -111,13 +109,23 @@ Though artists like [Jason Salavon](http://salavon.com/work/Class/grid/4/) have 
 
 If you have just two eye positions, you can normalize or do a basic average of multiple faces. If you have an entire mesh you can explore more advanced topics like [face substitution](http://vimeo.com/29348533), [face morphing, and caricatures](http://gmeyer3.projects.cs.illinois.edu/cs498dwh/proj4/).
 
-And keep in mind, you don't have to warp peoples faces using a computer. You can also [ask them to pose](](http://face2faceproject.com/).
+And keep in mind, you don't have to warp peoples faces using a computer. You can also [ask them to pose](http://face2faceproject.com/).
 
 #### Smiling
 
 [The Machine Perception Toolbox (MPT)](http://mplab.ucsd.edu/grants/project1/free-software/mptwebsite/introduction.html) is a computer vision toolkit from UCSD. One of the unofficial releases supported smile detection, but there was no documentation. Theo Watson studied the structure of MPT and got an example compiling, eventually creating two wrappers (ofxSmile and ofxBlink) that used the undocumented features. From this wrapper came [Autosmiley](http://fffff.at/auto-smiley/), then I collaborated with Theo on [Happy Things](http://kylemcdonald.net/happythings/?mode=each).
 
 Smiling is an interesting gesture, because it's one of the few facial expressions that might be considered truly "universal". Computationally distinguishing a [genuine smile](https://en.wikipedia.org/wiki/Duchenne_smile) from a fake one is not trivial.
+
+#### Faces in Interaction
+
+Golan + Zach's re:face
+
+#### Haar Detection
+
+#### Active Appearance Models
+
+Both Haar detection and AAM can be "fooled" by non-faces in similar ways to humans. Greg Borenstein has a good study of AAM [pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/).
 
 #### Assignment
 
