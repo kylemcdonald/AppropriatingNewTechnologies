@@ -55,17 +55,27 @@ When you start talking about properties of the face itself, you will also hear:
 
 As early as the 1960s, computers were aiding humans with face identification. In 1988/89 researchers developed techniques for automatically recognizing faces if the face was already aligned and normalized. They used techniques like principal components analysis, and neural networks for classification. In 1991 this technique was extended to face detection.
 
+One of the first databases to offer a baseline for comparing different algorithms was called [The Facial Recognition Technology (FERET) Database](http://www.itl.nist.gov/iad/humanid/feret/feret_master.html). It was developed from 1993-1997 and is still in use today. 
+
+> The goal of the FERET program was to develop automatic face recognition capabilities that could be employed to assist security, intelligence, and law enforcement personnel in the performance of their duties. ... Total funding for the program was in excess of $6.5 million. ([NIST](http://www.nist.gov/itl/iad/ig/feret.cfm))
+
+Face recognition became especially controversial in 2001:
+
 > The technology first captured the public’s attention from the media reaction to a trial implementation at the January 2001 Super Bowl, which captured surveillance images and compared them to a database of digital mugshots. ([US Government Subcommittee on Biometrics](www.biometrics.gov/Documents/facerec.pdf))
 
 Wired has a [good article](http://www.wired.com/politics/law/news/2001/02/41571) with some thoughts on whether it was constitutional, and relating some of the fears at the time.
 
 > "We do not believe that the public understands or accepts that they will be subjected to a computerized police lineup as a condition of admission." (American Civil Liberties Union)
 
+One of the developers of the system downplayed the privacy issues:
+
+> It's not automatically adding people to the database. It's simply matching faces in field-of-view against known criminals, or in the case of access control, employees who have access. So no one's privacy is at stake, except for the privacy of criminals and intruders. ([Frances Zelazney](http://articles.cnn.com/2001-07-17/tech/face.time.idg_1_facial-recognition-biometrics-market-physical-access-control/2?_s=PM:TECH))
+
 A more complete technical overview of the system used at the Super Bowl is available from [Security Solutions](http://securitysolutions.com/mag/security_looking_faces_super/). Due to complaints and false positives, the system was not used in 2002. Instead, the Super Bowl was designated a [National Special Security Event](https://en.wikipedia.org/wiki/National_Security_Special_Event) , for which the Secret Service provides security, frequently employing snipers and other unusual force.
 
-One of the first databases to offer a baseline for comparing different algorithms was called [The Facial Recognition Technology (FERET) Database](http://www.itl.nist.gov/iad/humanid/feret/feret_master.html). It was developed from 1993-1997 and is still in use today. 
+The city of Tampa, where the 2001 Super Bowl was held, [spent $8 million in federal grants](http://www.tampabay.com/news/publicsafety/crime/article1019492.ece) to improve the system and now has officers regularly using it at traffic stops. While there were no arrests at the Super Bowl, the system has since aided in more than 500 arrests. In late 2001 the ACLU released an amazing anti-surveillance opinion piece called [Your Face Is Not a Bar Code: Arguments Against Automatic Face Recognition in Public Places](http://polaris.gseis.ucla.edu/pagre/bar-code.html), but in 2008, they changed their opinion:
 
-> The goal of the FERET program was to develop automatic face recognition capabilities that could be employed to assist security, intelligence, and law enforcement personnel in the performance of their duties. ... Total funding for the program was in excess of $6.5 million. ([NIST](http://www.nist.gov/itl/iad/ig/feret.cfm))
+> If it has a high success rate, then maybe it is an effective tool. (Bruce Howie, chair of the legal panel for the Pinellas chapter of the American Civil Liberties Union)
 
 Today, the combination of face detection with publicly available social network information can [correctly predict your Facebook profile and the first five digits of your SSN](http://www.heinz.cmu.edu/~acquisti/face-recognition-study-FAQ/#Q1.4) for a third of the public, in under three seconds:
 
