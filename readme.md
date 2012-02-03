@@ -51,15 +51,27 @@ When you start talking about properties of the face itself, you will also hear:
 
 #### History
 
-> Despite the fact that other methods of identification (such as fingerprints, or iris scans) can be more accurate, face recognition has always remains a major focus of research because of its non-invasive nature and because it is people's primary method of person identification. [Tanzeem Choudhury](http://vismod.media.mit.edu/tech-reports/TR-516/node7.html)
+> Despite the fact that other methods of identification (such as fingerprints, or iris scans) can be more accurate, face recognition has always remains a major focus of research because of its non-invasive nature and because it is people's primary method of person identification. ([Tanzeem Choudhury](http://vismod.media.mit.edu/tech-reports/TR-516/node7.html))
 
 As early as the 1960s, computers were aiding humans with face identification. In 1988/89 researchers developed techniques for automatically recognizing faces if the face was already aligned and normalized. They used techniques like principal components analysis, and neural networks for classification. In 1991 this technique was extended to face detection.
 
-> The technology first captured the public’s attention from the media reaction to a trial implementation at the January 2001 Super Bowl, which captured surveillance images and compared them to a database of digital mugshots. [US Government Subcommittee on Biometrics](www.biometrics.gov/Documents/facerec.pdf)
+> The technology first captured the public’s attention from the media reaction to a trial implementation at the January 2001 Super Bowl, which captured surveillance images and compared them to a database of digital mugshots. ([US Government Subcommittee on Biometrics](www.biometrics.gov/Documents/facerec.pdf))
+
+Wired has a [good article](http://www.wired.com/politics/law/news/2001/02/41571) with some thoughts on whether it was constitutional, and relating some of the fears at the time.
+
+> "We do not believe that the public understands or accepts that they will be subjected to a computerized police lineup as a condition of admission." (American Civil Liberties Union)
+
+A more complete technical overview of the system used at the Super Bowl is available from [Security Solutions](http://securitysolutions.com/mag/security_looking_faces_super/). Due to complaints and false positives, the system was not used in 2002. Instead, the Super Bowl was designated a [National Special Security Event](https://en.wikipedia.org/wiki/National_Security_Special_Event) , for which the Secret Service provides security, frequently employing snipers and other unusual force.
 
 One of the first databases to offer a baseline for comparing different algorithms was called [The Facial Recognition Technology (FERET) Database](http://www.itl.nist.gov/iad/humanid/feret/feret_master.html). It was developed from 1993-1997 and is still in use today. 
 
-> The goal of the FERET program was to develop automatic face recognition capabilities that could be employed to assist security, intelligence, and law enforcement personnel in the performance of their duties. ... Total funding for the program was in excess of $6.5 million. [NIST](http://www.nist.gov/itl/iad/ig/feret.cfm)
+> The goal of the FERET program was to develop automatic face recognition capabilities that could be employed to assist security, intelligence, and law enforcement personnel in the performance of their duties. ... Total funding for the program was in excess of $6.5 million. ([NIST](http://www.nist.gov/itl/iad/ig/feret.cfm))
+
+Today, the combination of face detection with publicly available social network information can [correctly predict your Facebook profile and the first five digits of your SSN](http://www.heinz.cmu.edu/~acquisti/face-recognition-study-FAQ/#Q1.4) for a third of the public, in under three seconds:
+
+> Our study is less about face recognition and more about privacy concerns raised by the convergence of various technologies. There is no obvious answer and solution to the privacy concerns raised by widely available face recognition and identified (or identifiable) facial images. Google's Eric Schmidt observed that, in the future, young individuals may be entitled to change their names to disown youthful improprieties. It is much harder, however, to change someone's face.
+
+Reading more of [their research](https://www.blackhat.com/docs/webcast/acquisti-face-BH-Webinar-2012-out.pdf) there's a catch-22 they point out: the reason they can do this kind of matching is because there's a ton of data online, but in the future it will take more time to match people because there will be too much data to process. Also, notice that the research is partially funded by the U.S. Army Research Office. 
 
 #### Examples
 
