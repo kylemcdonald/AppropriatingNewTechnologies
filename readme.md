@@ -87,7 +87,7 @@ Today, the combination of face detection with publicly available social network 
 
 Reading [more of this research](https://www.blackhat.com/docs/webcast/acquisti-face-BH-Webinar-2012-out.pdf) there's a Catch-22: the reason they can do this kind of matching is because there's a ton of data online, but in the future it will take more time to match people because there will be too much data online. As an aside, it's worth noting that that this research is partially funded by the U.S. Army Research Office. 
 
-#### Psychology
+#### Science of the Face
 
 [Recognizing Action Units for Facial Expression Analysis](http://www-ee.ccny.cuny.edu/www/web/yltian/Publications/YLBook.pdf) uses feature matching, neural networks, and other techniques to detect interesting features and gestures.
 
@@ -101,11 +101,9 @@ better FACS link, story about making faces at each other all day
 
 even in people with prosopagnosia, skin conductance changes when they see someone familiar
 
-#### General Examples
-
-Daito's work: [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic)
-
 [Perlin](http://mrl.nyu.edu/~perlin/facedemo/)
+
+Daito's work: [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic) vs [synesthetic and normal pain empathy](http://www.livescience.com/1628-study-people-literally-feel-pain.html).
 
 #### Averaging, Normalization, and Comparison of Faces
 
