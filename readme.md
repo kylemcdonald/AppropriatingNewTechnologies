@@ -117,24 +117,26 @@ And keep in mind, you don't have to warp peoples faces using a computer. You can
 
 Smiling is an interesting gesture, because it's one of the few facial expressions that might be considered truly "universal". Computationally distinguishing a [genuine smile](https://en.wikipedia.org/wiki/Duchenne_smile) from a fake one is not trivial.
 
-#### Faces in Interaction
-
-Golan + Zach's re:face
-
 #### Haar Detection
 
 #### Active Appearance Models
 
-Both Haar detection and AAM can be "fooled" by non-faces in similar ways to humans. Greg Borenstein has a good study of AAM [pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/).
+Both Haar detection and AAM can be "fooled" by non-faces in similar ways to humans. Greg Borenstein has a good study of AAM [pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/). And there is a wonderful project called [Ghosts in the Machine](http://people.ucalgary.ca/~einbrain/new/text/ghosts_in_the_machine.html) that uses Haar cascades to search through noise for faces.
 
 #### Assignment
 
-Decide whether to work with [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/downloads), [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) directly (if you want to work with ofxFaceTracker, you need to contact Jason Saragih immediately for the FaceTracker source). Then pick one or more of the following:
+First, decide whether to work with [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/downloads), [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) directly (if you want to work with ofxFaceTracker, you need to contact Jason Saragih immediately for the FaceTracker source). Then pick one or more of the following:
 
-1. Create a system that amplifies facial gestures. What gesture do you think is most interesting, or most ignored?
-2. Create an [inverse surveillance](https://en.wikipedia.org/wiki/Sousveillance#Inverse_surveillance) or [personal surveillance](https://en.wikipedia.org/wiki/Sousveillance#Personal_sousveillance) system.
-3. Use facial information to create a single image or video that represents a group of people. It can't be an average face or a Picasa-style "face movie".
-4. Create a "mirror" that gives people a novel understanding of their own face, or challenges their sense of identity.
+* Create a system that amplifies facial gestures. What gesture do you think is most interesting, or most ignored?
+* Create an [inverse surveillance](https://en.wikipedia.org/wiki/Sousveillance#Inverse_surveillance) or [personal surveillance](https://en.wikipedia.org/wiki/Sousveillance#Personal_sousveillance) system.
+* Use facial information to create a single image or video that represents a group of people. It can't be an average face or a Picasa-style "face movie".
+* Create a "mirror" that gives people a novel understanding of their own face, or challenges their sense of identity. You may create this in an installation format, or for your own personal reflection.
+
+Second, you should find your favorite example of a face-based media art piece (interactive or not) and add it to the list on [the wiki](https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Faces-in-Media-Art).
+
+#### Reading
+
+[Computer Vision for Artists and Designers: Pedagogic Tools and Techniques for Novice Programmers](http://www.flong.com/texts/essays/essay_cvad/) is a slightly dated but excellent essay from Golan Levin. It's a quick read, and to understand face tracking in context you need to understand computer vision.
 
 ### Week 3: February 10
 
