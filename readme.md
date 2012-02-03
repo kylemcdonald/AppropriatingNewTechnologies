@@ -85,34 +85,50 @@ Today, the combination of face detection with publicly available social network 
 
 > Our study is less about face recognition and more about privacy concerns raised by the convergence of various technologies. There is no obvious answer and solution to the privacy concerns raised by widely available face recognition and identified (or identifiable) facial images. Google's Eric Schmidt observed that, in the future, young individuals may be entitled to change their names to disown youthful improprieties. It is much harder, however, to change someone's face.
 
-Reading [more of this research](https://www.blackhat.com/docs/webcast/acquisti-face-BH-Webinar-2012-out.pdf) there's a Catch-22: the reason they can do this kind of matching is because there's a ton of data online, but in the future it will take more time to match people because there will be too much data online.As an aside: notice that this research is partially funded by the U.S. Army Research Office. 
+Reading [more of this research](https://www.blackhat.com/docs/webcast/acquisti-face-BH-Webinar-2012-out.pdf) there's a Catch-22: the reason they can do this kind of matching is because there's a ton of data online, but in the future it will take more time to match people because there will be too much data online. As an aside, it's worth noting that that this research is partially funded by the U.S. Army Research Office. 
 
-#### Examples
+#### Psychology
+
+[Recognizing Action Units for Facial Expression Analysis](http://www-ee.ccny.cuny.edu/www/web/yltian/Publications/YLBook.pdf) uses feature matching, neural networks, and other techniques to detect interesting features and gestures.
+
+better FACS link, story about making faces at each other all day
+
+[microexpressions](https://en.wikipedia.org/wiki/Microexpression) and [truth wizards](https://en.wikipedia.org/wiki/Wizards_Project)
+
+[Change blindness to gradual face changes](http://srsc.ulb.ac.be/axcwww/papers/pdf/06-PB.pdf)
+
+[machine pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/)
+
+even in people with prosopagnosia, skin conductance changes when they see someone familiar
+
+#### General Examples
 
 Daito's work: [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic)
 
-better FACS link
-story about making faces at each other all day
-[microexpressions](https://en.wikipedia.org/wiki/Microexpression) and [truth wizards](https://en.wikipedia.org/wiki/Wizards_Project)
-Perlin's work
-[Recognizing Action Units for Facial Expression Analysis](http://www-ee.ccny.cuny.edu/www/web/yltian/Publications/YLBook.pdf) uses feature matching, neural networks, and other techniques to detect interesting features and gestures.
-[Change blindness to gradual face changes](http://srsc.ulb.ac.be/axcwww/papers/pdf/06-PB.pdf)
-[machine pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/)
-even in people with prosopagnosia, skin conductance changes when they see someone familiar
+[Perlin](http://mrl.nyu.edu/~perlin/facedemo/)
 
-[face morphing, caricatures, and averaging](http://gmeyer3.projects.cs.illinois.edu/cs498dwh/proj4/)
-jason salavon's [class of 67/88](http://salavon.com/work/Class/grid/4/)
-luke dubois [britney](https://www.youtube.com/watch?v=6QbN8bn3Vno), [play](https://www.youtube.com/watch?v=VzFA11pQIIo) and [a more perfect union](https://www.youtube.com/watch?v=FWq4lk9JYBM&t=1m15s)
-[the face of tomorrow](http://www.faceoftomorrow.com/)
-[face2face project](http://face2faceproject.com/)
-picasa's [face movie](https://www.youtube.com/watch?v=fLQtssJDMMc) requires position, size, rotation
+#### Averaging, Normalization, and Comparison of Faces
 
-[MPT](http://mplab.ucsd.edu/grants/project1/free-software/mptwebsite/introduction.html)-based smile detection (MPSmile) lead to: theo's [autosmiley](http://fffff.at/auto-smiley/) and theo+me [happy things](http://kylemcdonald.net/happythings/?mode=each)
+Though artists like [Jason Salavon](http://salavon.com/work/Class/grid/4/) have made entire careers out of averaging images, there is still plenty to explore. [The face of tomorrow](http://www.faceoftomorrow.com/) approaches face averaging with international perspective. Luke DuBois normalizes multiple faces over time: with [Britney](https://www.youtube.com/watch?v=6QbN8bn3Vno) he only uses images of the pop icon, in [Play](https://www.youtube.com/watch?v=VzFA11pQIIo) only the faces of Playboy centerfold models, and in [A more perfect union](https://www.youtube.com/watch?v=FWq4lk9JYBM&t=1m15s) he uses online dating profiles. All of Luke's faces are manually aligned using custom software where he defines the eye positions. Picasa's [Face movies](https://www.youtube.com/watch?v=fLQtssJDMMc) create a similar effect automatically.
+
+If you have just two eye positions, you can normalize or do a basic average of multiple faces. If you have an entire mesh you can explore more advanced topics like [face substitution](http://vimeo.com/29348533), [face morphing, and caricatures](http://gmeyer3.projects.cs.illinois.edu/cs498dwh/proj4/).
+
+And keep in mind, you don't have to warp peoples faces using a computer. You can also [ask them to pose](](http://face2faceproject.com/).
+
+#### Smiling
+
+[The Machine Perception Toolbox (MPT)](http://mplab.ucsd.edu/grants/project1/free-software/mptwebsite/introduction.html) is a computer vision toolkit from UCSD. One of the unofficial releases supported smile detection, but there was no documentation. Theo Watson studied the structure of MPT and got an example compiling, eventually creating two wrappers (ofxSmile and ofxBlink) that used the undocumented features. From this wrapper came [Autosmiley](http://fffff.at/auto-smiley/), then I collaborated with Theo on [Happy Things](http://kylemcdonald.net/happythings/?mode=each).
+
+Smiling is an interesting gesture, because it's one of the few facial expressions that might be considered truly "universal". Computationally distinguishing a [genuine smile](https://en.wikipedia.org/wiki/Duchenne_smile) from a fake one is not trivial.
 
 #### Assignment
 
-1. Decide whether to work with [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/downloads), [FaceSubstitution](https://github.com/arturoc/FaceSubstitution), or to detect your own facial gesture. What gesture do you think is most interesting, or most ignored?
-2. Make something awesome.
+Decide whether to work with [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/downloads), [ofxFaceTracker](https://github.com/kylemcdonald/ofxFaceTracker) directly (if you want to work with ofxFaceTracker, you need to contact Jason Saragih immediately for the FaceTracker source). Then pick one or more of the following:
+
+1. Create a system that amplifies facial gestures. What gesture do you think is most interesting, or most ignored?
+2. Create an [inverse surveillance](https://en.wikipedia.org/wiki/Sousveillance#Inverse_surveillance) or [personal surveillance](https://en.wikipedia.org/wiki/Sousveillance#Personal_sousveillance) system.
+3. Use facial information to create a single image or video that represents a group of people. It can't be an average face or a Picasa-style "face movie".
+4. Create a "mirror" that gives people a novel understanding of their own face, or challenges their sense of identity.
 
 ### Week 3: February 10
 
