@@ -9,13 +9,13 @@ What do you want your world to look like? This class will focus on creating the 
 
 ### Week 1: January 27
 
-Schedule:
+#### Agenda
 
 1. Introductions
 2. Class overview
 3. Assignment preparation: GitHub, code archaeology, distributed creativity
 
-Assignment:
+#### Assignment
 
 1. Register for the [openFrameworks forum](http://forum.openframeworks.cc/), and look around to see what people are working on (try [unread posts](http://forum.openframeworks.cc/index.php?action=unread)).
 2. If you haven't already, download [openFrameworks](http://www.openframeworks.cc/).
@@ -25,6 +25,54 @@ Assignment:
 6. After completing the assignment, post a link to your video on the wiki. And the chat logs will also go on the wiki.
 
 ### Week 2: February 3
+
+This week we're going to talk about faces.
+
+#### Agenda
+
+1. History of faces and computer vision
+2. Haar object detection and OpenCV
+3. Active appearance models: [FaceTracker](http://web.mac.com/jsaragih/FaceTracker/FaceTracker.html), [aamlib](https://code.google.com/p/aamlib-opencv/) and [Stasm](http://www.milbo.users.sonic.net/stasm/index.html)
+
+#### Summary
+
+One of the most salient objects in our day-to-day life is the human face. Faces are so important that the impairment of our face-processing ability is seen as a disorder, called [prosopagnosia](https://en.wikipedia.org/wiki/Prosopagnosia) while unconsciously seeing faces where there are none is an almost universal kind of [pareidolia](https://en.wikipedia.org/wiki/Pareidolia). Without any effort, we maintain a massively multidimensional model that can recognize minor variations in shape and color. One theory says that [color vision evolved in apes to help us empathize](http://www.sciencedaily.com/releases/2006/03/060320221839.htm) when we look at each others' faces. Structurally, [Chernoff faces](https://en.wikipedia.org/wiki/Chernoff_faces) use [18 dimensions](http://eagereyes.org/criticism/chernoff-faces) while FACS uses [46 dimensions](https://en.wikipedia.org/wiki/Facial_Action_Coding_System).
+
+When talking about computers vision and faces, three words come into play: detection, recognition, and tracking. Each of these has a specific meaning:
+
+1. _Detection_ is a binary classification task. That means it's only about deciding whether something is a face or not. _Detection_ means knowing the difference between a face and a non-face.
+2. _Recognition_ is about association, or naming. _Recognition_ means knowing the difference between my face and your face.
+3. _Tracking_ is about detection, and possibly recognition, over time. _Tracking_ means knowing that the face in this frame of video is the same as the face in the last frame of video.
+
+When you start talking about properties of the face itself, you will also hear:
+
+1. _Pose_ describes the position and orientation of the face.
+2. _Expression_ describes the gesture the face is making.
+
+Daito's work: [Electric Stimulus to Face -test3](https://www.youtube.com/watch?v=YxdlYFCp5Ic)
+
+better FACS link
+story about making faces at each other all day
+[microexpressions](https://en.wikipedia.org/wiki/Microexpression) and [truth wizards](https://en.wikipedia.org/wiki/Wizards_Project)
+Perlin's work
+[Recognizing Action Units for Facial Expression Analysis](http://www-ee.ccny.cuny.edu/www/web/yltian/Publications/YLBook.pdf) uses feature matching, neural networks, and other techniques to detect interesting features and gestures.
+[Change blindness to gradual face changes](http://srsc.ulb.ac.be/axcwww/papers/pdf/06-PB.pdf)
+[machine pareidolia](http://urbanhonking.com/ideasfordozens/2012/01/14/machine-pareidolia-hello-little-fella-meets-facetracker/)
+even in people with prosopagnosia, skin conductance changes when they see someone familiar
+
+[face morphing, caricatures, and averaging](http://gmeyer3.projects.cs.illinois.edu/cs498dwh/proj4/)
+jason salavon's [class of 67/88](http://salavon.com/work/Class/grid/4/)
+luke dubois [britney](https://www.youtube.com/watch?v=6QbN8bn3Vno), [play](https://www.youtube.com/watch?v=VzFA11pQIIo) and [a more perfect union](https://www.youtube.com/watch?v=FWq4lk9JYBM&t=1m15s)
+[the face of tomorrow](http://www.faceoftomorrow.com/)
+[face2face project](http://face2faceproject.com/)
+picasa's [face movie](https://www.youtube.com/watch?v=fLQtssJDMMc) requires position, size, rotation
+
+[MPT](http://mplab.ucsd.edu/grants/project1/free-software/mptwebsite/introduction.html)-based smile detection (MPSmile) lead to: theo's [autosmiley](http://fffff.at/auto-smiley/) and theo+me [happy things](http://kylemcdonald.net/happythings/?mode=each)
+
+#### Assignment
+
+1. Decide whether to work with [FaceOSC](https://github.com/kylemcdonald/ofxFaceTracker/downloads), [FaceSubstitution](https://github.com/arturoc/FaceSubstitution), or to detect your own facial gesture. What gesture do you think is most interesting, or most ignored?
+2. Make something awesome.
 
 ### Week 3: February 10
 
