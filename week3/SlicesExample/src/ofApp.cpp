@@ -3,6 +3,7 @@
 // save http://i.imgur.com/ym71g.gif as data/body.gif
 
 void ofApp::setup() {
+	ofSetVerticalSync(true);
 	ofVideoPlayer body;
 	body.loadMovie("body.gif");
 	int n = body.getTotalNumFrames();
