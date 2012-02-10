@@ -10,5 +10,4 @@ public:
 	
 	ofEasyCam cam;
 	ofMesh mesh;
-	ofLight light;
 };

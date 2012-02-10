@@ -1,12 +1,8 @@
 #include "ofApp.h"
 
 void addFace(ofMesh& mesh, ofVec3f a, ofVec3f b, ofVec3f c) {
-	ofVec3f normal = ((b - a).cross(c - a)).normalize();
-	mesh.addNormal(normal);
 	mesh.addVertex(a);
-	mesh.addNormal(normal);
 	mesh.addVertex(b);
-	mesh.addNormal(normal);
 	mesh.addVertex(c);
 }
 
@@ -31,7 +27,7 @@ void ofApp::setup() {
 	img.loadImage("linzer.png");
 	
 	mesh.setMode(OF_PRIMITIVE_TRIANGLES);
-	int skip = 4;	
+	int skip = 5;	
 	int width = img.getWidth();
 	int height = img.getHeight();
 	ofVec3f zero(0, 0, 0);
@@ -47,9 +43,7 @@ void ofApp::setup() {
 		}
 	}
 	
-	light.enable();
-	light.setPosition(500, 0, 0);
-	
+	// even points can overlap with each other, let's avoid that
 	glEnable(GL_DEPTH_TEST);
 }
 
@@ -61,6 +55,6 @@ void ofApp::draw() {
 	ofBackground(0);
 	cam.begin();
 	ofScale(1, -1, 1); // make y point down
-	mesh.draw();
+	mesh.drawWireframe();
 	cam.end();
 }
