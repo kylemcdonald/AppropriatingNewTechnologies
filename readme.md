@@ -45,7 +45,3 @@ There will be assignments given at the end of the first four weeks, and a final 
 In order to pass the class, students must complete the assignments, the final project, and attend class. A student will fail if they miss more than one class, miss more than one assignment, or fail to present a completed final project.
 
 In order to receive feedback, the assignments must be handed in before the following class. Late assignments are completely acceptable, but they will not receive feedback.
-
-## Auditing Policy
-
-Anyone is free to audit the class, and especially welcome to join in class discussion. But I can only grade assignments, offer homework help, and answer emails from people who are registered for the class.
