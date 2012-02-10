@@ -26,7 +26,9 @@ We'll look at a lot of examples of appropriation to get a feeling for how the cl
 
 This week we're going to talk about faces: detection, recognition, and tracking.
 
-### Week 3: February 10
+### [Week 3](https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-3): February 10
+
+All about 3d: scanning, interaction, visualization.
 
 ### Week 4: February 17
 
