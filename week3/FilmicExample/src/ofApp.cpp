@@ -30,6 +30,7 @@ void ofApp::setup() {
 }
 
 void ofApp::update() {
+	cameraFilter.setDistortion(ofMap(mouseX, 0, ofGetWidth(), -1, 1, true));
 }
 
 void ofApp::draw() {
@@ -47,10 +48,11 @@ void ofApp::draw() {
 	cam.end();
 	cameraFilter.end();
 	
-	// need to re-flip because FBOs are were upside down
-	// this feels like a bug, not sure why we have to do this.
+	// these two lines are a bug with 007, but fixed in the develop branch
+	// if you're using OF from github, comment out these two lines.
 	ofTranslate(0, ofGetHeight());
 	ofScale(1, -1, 1);
+	
 	cameraFilter.draw();
 }
 
