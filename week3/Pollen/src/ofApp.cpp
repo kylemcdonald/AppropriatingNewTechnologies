@@ -1,29 +1,27 @@
 #include "ofApp.h"
 
-int nPoints = 4096; // points to draw
-float complexity = 6; // wind complexity
-float maxMass = .8; // max pollen mass
-float timeSpeed = .02; // wind variation speed
-float phase = TWO_PI; // separate u-noise from v-noise
- 
-float windSpeed = 40; // wind vector magnitude for debug
-int step = 10; // spatial sampling rate for debug
- 
-vector<float> pollenMass;
-vector<ofVec2f> points;
- 
-bool debugMode = false;
+ofVec2f ofApp::getField(ofVec2f position) {
+	float normx = ofNormalize(position.x, 0, width);
+	float normy = ofNormalize(position.y, 0, height);
+	float u = ofNoise(t + phase, normx * complexity + phase, normy * complexity + phase);
+	float v = ofNoise(t - phase, normx * complexity - phase, normy * complexity + phase);
+	return ofVec2f(u, v);
+}
 
-float width, height;
-
-ofMesh mesh;
- 
 void ofApp::setup() {
 	ofSetVerticalSync(true);
-	//ofSetBackgroundAuto(false);
 	ofEnableAlphaBlending();
+	
 	width = ofGetWidth();
 	height = ofGetHeight();
+	nPoints = 4096; // points to draw
+	complexity = 6; // wind complexity
+	maxMass = .8; // max pollen mass
+	timeSpeed = .02; // wind variation speed
+	phase = TWO_PI; // separate u-noise from v-noise
+	windSpeed = 40; // wind vector magnitude for debug
+	step = 10; // spatial sampling rate for debug
+	debugMode = false;
 	
   points.resize(nPoints);
   pollenMass.resize(nPoints);
@@ -31,29 +29,25 @@ void ofApp::setup() {
     points[i] = ofVec2f(ofRandom(0, width), ofRandom(0, height));
     pollenMass[i] = ofRandom(0, maxMass);
   }
-  //noiseDetail(14);
   ofBackground(255);
+	mesh.clear();
 }
 
 void ofApp::update() {
+  t = ofGetFrameNum() * timeSpeed;
 } 
 
-void ofApp::draw() { 
-  float t = ofGetFrameNum() * timeSpeed;
-   
+void ofApp::draw() { 	
   if(debugMode) {
     ofBackground(255);
     ofSetColor(0);
     float s = windSpeed;
     for(int i = 0; i < width; i += step) {
       for(int j = 0; j < height; j += step) {
-        float normx = ofMap(i, 0, width, 0, 1);
-        float normy = ofMap(j, 0, height, 0, 1);
-        float u = ofNoise(t + phase, normx * complexity + phase, normy * complexity + phase);
-        float v = ofNoise(t - phase, normx * complexity - phase, normy * complexity + phase);
+				ofVec2f field = getField(ofVec2f(i, j));
         ofPushMatrix();
         ofTranslate(i, j);
-        ofLine(0, 0, ofLerp(-windSpeed, windSpeed, u), ofLerp(-windSpeed, windSpeed, v));
+        ofLine(0, 0, ofLerp(-windSpeed, windSpeed, field.x), ofLerp(-windSpeed, windSpeed, field.y));
         ofPopMatrix();
       }
     }   
@@ -65,37 +59,35 @@ void ofApp::draw() {
 	//ofMesh mesh;
 	mesh.setMode(OF_PRIMITIVE_POINTS);
   for(int i = 0; i < nPoints; i++) {
-    float x = points[i][0];
-    float y = points[i][1];
-     
-    float normx = ofNormalize(x, 0, width);
-    float normy = ofNormalize(y, 0, height);
-    float u = ofNoise(t + phase, normx * complexity + phase, normy * complexity + phase);
-    float v = ofNoise(t - phase, normx * complexity - phase, normy * complexity + phase);
-    float speed = (1 + ofNoise(t, u, v)) / pollenMass[i];
-    x += ofLerp(-speed, speed, u);
-    y += ofLerp(-speed, speed, v);
-     
+		float& x = points[i].x, y = points[i].y;
+		ofVec2f field = getField(points[i]);
+    float speed = (1 + ofNoise(t, field.x, field.y)) / pollenMass[i];
+    x += ofLerp(-speed, speed, field.x);
+    y += ofLerp(-speed, speed, field.y);
+		
     if(x < 0 || x > width || y < 0 || y > height) {
       x = ofRandom(0, width);
       y = ofRandom(0, height);
     }
-     
+		
     if(debugMode) {
-      ofCircle(x, y, 1);
-    } else
+      ofCircle(x, y, 3);
+    } else {
       mesh.addVertex(ofVec2f(x, y));
-       
+		}
+		
     points[i].x = x;
     points[i].y = y;
   }
-	mesh.draw();
+	if(!debugMode) {
+		mesh.draw();
+	}
 }
- 
+
 void ofApp::mousePressed(int x, int y, int button) {
   setup();
 }
- 
+
 void ofApp::keyPressed(int key) {
   debugMode = !debugMode;
   ofBackground(255);
