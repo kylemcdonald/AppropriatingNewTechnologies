@@ -47,13 +47,11 @@ void ofApp::draw() {
 				ofVec2f field = getField(ofVec2f(i, j));
         ofPushMatrix();
         ofTranslate(i, j);
+				ofSetColor(0);
         ofLine(0, 0, ofLerp(-windSpeed, windSpeed, field.x), ofLerp(-windSpeed, windSpeed, field.y));
         ofPopMatrix();
       }
-    }   
-    ofSetColor(255, 0, 0);
-  } else {
-    ofSetColor(0, 10);
+    }
   }
 	
 	//ofMesh mesh;
@@ -71,6 +69,7 @@ void ofApp::draw() {
     }
 		
     if(debugMode) {
+			ofSetColor(255, 0, 0);
       ofCircle(x, y, 3);
     } else {
       mesh.addVertex(ofVec2f(x, y));
@@ -80,6 +79,7 @@ void ofApp::draw() {
     points[i].y = y;
   }
 	if(!debugMode) {
+    ofSetColor(0, 10);
 		mesh.draw();
 	}
 }
