@@ -22,7 +22,7 @@ void ofApp::draw() {
 }
 
 void ofApp::dumpMemory() {
-	int offset = ofRandom(0x0000, 0xffff); // some 32-bit address
+	unsigned int offset = ofRandom(0x0000, 0xffff); // some 32-bit address
 	unsigned char* data = (unsigned char*) offset;
 	img.allocate(ofGetWidth(), ofGetHeight(), OF_IMAGE_COLOR);
 	img.setFromPixels(data, img.getWidth(), img.getHeight(), OF_IMAGE_COLOR);

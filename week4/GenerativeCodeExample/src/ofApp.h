@@ -11,7 +11,6 @@ public:
 	void keyPressed(int key);
 
 	void audioOut(float* input, int n, int channels);
-	ofSoundStream soundStream;	
 	
 	ofShader shader;
 	ofFbo fbo;

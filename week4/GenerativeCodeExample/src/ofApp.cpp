@@ -14,7 +14,7 @@ void main() {\n\
 void ofApp::setup() {
 	ofSetVerticalSync(true);
 	ofSetFrameRate(15);
-	soundStream.setup(this, 2, 0, 48000, 256, 1);
+	ofSoundStreamSetup(2, 0, 48000, 256, 1);
 	fbo.allocate(512, 512);
 	time = 0;
 	rateDivider = 8;
@@ -22,7 +22,7 @@ void ofApp::setup() {
 }
 
 void ofApp::update() {
-	keyPressed(' ');
+	//keyPressed(' ');
 }
 
 void ofApp::draw() {
@@ -52,7 +52,7 @@ void ofApp::keyPressed(int key) {
 	shader.linkProgram();
 }
 
-void ofApp::audioOut(float* input, int n, int channels) {
+void ofApp::audioOut(float* output, int n, int channels) {
 	unsigned char* pixels = audioPixels.getPixels();
 	int wh = audioPixels.getWidth() * audioPixels.getHeight();
 	int cwh = audioPixels.getNumChannels() * wh;
@@ -62,8 +62,8 @@ void ofApp::audioOut(float* input, int n, int channels) {
 			int curPixel = 4 * curTime;
 			for(int j = 0; j < channels; j++) {
 				int cur = pixels[curPixel + j];
-				input[i * channels + j] = cur / 128. - 1.;
-				input[i * channels + j] *= .05; // make it quiet
+				output[i * channels + j] = cur / 128. - 1.;
+				output[i * channels + j] *= .05; // make it quiet
 			}
 			time++;
 		}

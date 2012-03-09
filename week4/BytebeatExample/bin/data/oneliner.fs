@@ -7,6 +7,6 @@
 const int width = 512; // assumes you're drawing at 512x512
 void main() {
 	int t = int(gl_FragCoord.y) * width + int(gl_FragCoord.x);
-	int x = t*5&(t>>7)|t*3&(t*4>>10);
+	int x = (((t>>4)>>(t&2))-3);
 	gl_FragColor = vec4(vec3(float(x % 256) / 256.),1.);
 }
