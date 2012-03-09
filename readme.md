@@ -30,15 +30,17 @@ This week we're going to talk about faces: detection, recognition, and tracking.
 
 All about 3d: scanning, interaction, visualization.
 
-### Week 4: February 17
+### [Week 4](https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-4): February 17
 
-### Week 5: February 24
+Glitches, and appropriating failure.
 
-I will be away from class this week. Once it's closer, we can decide whether it makes more sense to reschedule or have someone else lead.
+### [Week 5](https://github.com/kylemcdonald/AppropriatingNewTechnologies/wiki/Week-5): March 2
 
-### Week 6: March 2
+Eye tracking and gaze estimation, blink detection.
 
-### Week 7: March 9
+### Week 6: March 9
+
+### Week 7: March 23
 
 ## Assignments and Grading
 
