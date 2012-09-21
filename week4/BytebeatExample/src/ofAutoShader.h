@@ -4,7 +4,7 @@ class ofAutoShader : public ofShader {
 public:
 	void setup(string name) {
 		this->name = name;
-		ofAddListener(ofEvents.update, this, &ofAutoShader::update);
+		ofAddListener(ofEvents().update, this, &ofAutoShader::update);
 	}
 	
 	void update(ofEventArgs &args) {	
