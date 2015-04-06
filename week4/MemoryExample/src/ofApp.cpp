@@ -17,7 +17,7 @@ void ofApp::draw() {
 	unsigned char* pixels = img.getPixels();
 	zoomed.setFromPixels(pixels + offset, 16, 9, OF_IMAGE_COLOR);
 	zoomed.update();
-	ofSetMinMagFilters(GL_NEAREST, GL_NEAREST);
+	zoomed.getTextureReference().setTextureMinMagFilter(GL_NEAREST, GL_NEAREST);
 	zoomed.draw(10, 10, 320, 180);
 }
 
